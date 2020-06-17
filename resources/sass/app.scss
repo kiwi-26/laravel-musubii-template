@@ -1,3 +1,13 @@
 //
 @import "~musubii/src/scss/configs/_import.scss";
 @import "~musubii/src/scss/styles/_import.scss";
+
+[aria-disabled=true], [disabled] {
+    cursor: unset;
+}
+
+.button.is-outline.is-disabled.is-active {
+    background: $convert-body-color;
+    color: $convert-body-background-color;
+    @include musubii-style-text-weight-strong();
+}
